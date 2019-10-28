@@ -19,6 +19,7 @@
 		400C76FA2366BC1E009F1580 /* CollectionViewSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400C76F92366BC1E009F1580 /* CollectionViewSampleViewController.swift */; };
 		400C76FC2366BFA9009F1580 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400C76FB2366BFA9009F1580 /* CustomCollectionViewCell.swift */; };
 		400C76FE2366C343009F1580 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 400C76FD2366C343009F1580 /* CustomCollectionViewCell.xib */; };
+		400C77002366C8E8009F1580 /* StackViewSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400C76FF2366C8E8009F1580 /* StackViewSampleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		400C76F92366BC1E009F1580 /* CollectionViewSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewSampleViewController.swift; sourceTree = "<group>"; };
 		400C76FB2366BFA9009F1580 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		400C76FD2366C343009F1580 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
+		400C76FF2366C8E8009F1580 /* StackViewSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewSampleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				400C76F92366BC1E009F1580 /* CollectionViewSampleViewController.swift */,
 				400C76FB2366BFA9009F1580 /* CustomCollectionViewCell.swift */,
 				400C76FD2366C343009F1580 /* CustomCollectionViewCell.xib */,
+				400C76FF2366C8E8009F1580 /* StackViewSampleViewController.swift */,
 			);
 			path = Samples;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 				400C76E32366A3E4009F1580 /* ViewController.swift in Sources */,
 				400C76FA2366BC1E009F1580 /* CollectionViewSampleViewController.swift in Sources */,
 				400C76FC2366BFA9009F1580 /* CustomCollectionViewCell.swift in Sources */,
+				400C77002366C8E8009F1580 /* StackViewSampleViewController.swift in Sources */,
 				400C76F82366B325009F1580 /* SearchBarSampleViewController.swift in Sources */,
 				400C76DF2366A3E4009F1580 /* AppDelegate.swift in Sources */,
 				400C76E12366A3E4009F1580 /* SceneDelegate.swift in Sources */,

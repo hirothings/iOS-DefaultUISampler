@@ -246,7 +246,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Transition" id="wc4-c2-dby" userLabel="Layout">
+                            <tableViewSection headerTitle="Layout" id="wc4-c2-dby" userLabel="Layout">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="9gJ-1s-Hg5" style="IBUITableViewCellStyleDefault" id="prb-Iv-Kya" userLabel="StackView">
                                         <rect key="frame" x="0.0" y="646" width="414" height="43.5"/>
@@ -264,6 +264,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="z8e-ci-4Sl" kind="show" id="NN3-Mt-DeO"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -521,6 +524,81 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oAR-pR-C8U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1671" y="2901"/>
+        </scene>
+        <!--Stack View Sample View Controller-->
+        <scene sceneID="nei-1U-LoJ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uOx-4o-GHn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="z8e-ci-4Sl" customClass="StackViewSampleViewController" customModule="iOS_DefaultUISampler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KkG-Qu-hsj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8kE-bO-GOB">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IIX-0y-SLu">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="258"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StackViewを利用するとトルツメの実装が簡単にできる" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GcM-ZS-Wu0">
+                                                <rect key="frame" x="16" y="108.5" width="382" height="41"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="GcM-ZS-Wu0" firstAttribute="centerX" secondItem="IIX-0y-SLu" secondAttribute="centerX" id="0tT-6n-hcr"/>
+                                            <constraint firstItem="GcM-ZS-Wu0" firstAttribute="leading" secondItem="IIX-0y-SLu" secondAttribute="leading" constant="16" id="BJo-lv-3Zx"/>
+                                            <constraint firstItem="GcM-ZS-Wu0" firstAttribute="centerY" secondItem="IIX-0y-SLu" secondAttribute="centerY" id="REo-NP-iHS"/>
+                                            <constraint firstAttribute="trailing" secondItem="GcM-ZS-Wu0" secondAttribute="trailing" constant="16" id="de0-LQ-CID"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fpj-FR-fKq">
+                                        <rect key="frame" x="0.0" y="258" width="414" height="258"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXg-gn-Rtr">
+                                                <rect key="frame" x="165" y="105" width="84" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="6et-rQ-ocW"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <state key="normal" title="トルツメ!!">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="FXg-gn-Rtr" firstAttribute="centerX" secondItem="Fpj-FR-fKq" secondAttribute="centerX" id="Hh3-aV-Rk1"/>
+                                            <constraint firstItem="FXg-gn-Rtr" firstAttribute="centerY" secondItem="Fpj-FR-fKq" secondAttribute="centerY" id="ZRV-V7-387"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IA7-1x-aTi">
+                                        <rect key="frame" x="0.0" y="516" width="414" height="258"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="8kE-bO-GOB" firstAttribute="leading" secondItem="LTr-SZ-kUd" secondAttribute="leading" id="FgH-dU-fiR"/>
+                            <constraint firstItem="LTr-SZ-kUd" firstAttribute="trailing" secondItem="8kE-bO-GOB" secondAttribute="trailing" id="Uul-KX-V8y"/>
+                            <constraint firstItem="LTr-SZ-kUd" firstAttribute="bottom" secondItem="8kE-bO-GOB" secondAttribute="bottom" id="VRS-BA-IGN"/>
+                            <constraint firstItem="8kE-bO-GOB" firstAttribute="top" secondItem="LTr-SZ-kUd" secondAttribute="top" id="VTV-dp-ijb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LTr-SZ-kUd"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="m2s-7S-eCC"/>
+                    <connections>
+                        <outlet property="centerRowView" destination="Fpj-FR-fKq" id="qvW-v1-iD9"/>
+                        <outlet property="hideButton" destination="FXg-gn-Rtr" id="NV1-jX-q55"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1656" y="3579"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Yyu-mk-qsK">
