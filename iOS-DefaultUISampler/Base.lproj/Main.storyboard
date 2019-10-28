@@ -536,10 +536,10 @@
             </objects>
             <point key="canvasLocation" x="2346" y="135"/>
         </scene>
-        <!--View Controller-->
+        <!--Segmented Control Sample View Controller-->
         <scene sceneID="fKy-KT-fAH">
             <objects>
-                <viewController id="W62-6z-CS1" sceneMemberID="viewController">
+                <viewController id="W62-6z-CS1" customClass="SegmentedControlSampleViewController" customModule="iOS_DefaultUISampler" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t0P-NR-LYk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -560,6 +560,9 @@
                         <viewLayoutGuide key="safeArea" id="Epa-qn-QK3"/>
                     </view>
                     <navigationItem key="navigationItem" id="kxD-Ko-hPP"/>
+                    <connections>
+                        <outlet property="segmentedControl" destination="yW4-ld-Ifd" id="71k-WQ-dXO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ueb-uw-X6o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
