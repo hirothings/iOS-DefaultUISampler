@@ -14,6 +14,7 @@
 		400C76E82366A3E5009F1580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 400C76E72366A3E5009F1580 /* Assets.xcassets */; };
 		400C76EB2366A3E5009F1580 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 400C76E92366A3E5009F1580 /* LaunchScreen.storyboard */; };
 		400C76F42366AF85009F1580 /* SegmentedControlSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400C76F32366AF85009F1580 /* SegmentedControlSampleViewController.swift */; };
+		400C76F62366B1A1009F1580 /* IndicatorSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400C76F52366B1A1009F1580 /* IndicatorSampleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		400C76EA2366A3E5009F1580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		400C76EC2366A3E5009F1580 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		400C76F32366AF85009F1580 /* SegmentedControlSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlSampleViewController.swift; sourceTree = "<group>"; };
+		400C76F52366B1A1009F1580 /* IndicatorSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorSampleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				400C76F32366AF85009F1580 /* SegmentedControlSampleViewController.swift */,
+				400C76F52366B1A1009F1580 /* IndicatorSampleViewController.swift */,
 			);
 			path = Samples;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				400C76F62366B1A1009F1580 /* IndicatorSampleViewController.swift in Sources */,
 				400C76E32366A3E4009F1580 /* ViewController.swift in Sources */,
 				400C76DF2366A3E4009F1580 /* AppDelegate.swift in Sources */,
 				400C76E12366A3E4009F1580 /* SceneDelegate.swift in Sources */,

@@ -269,10 +269,10 @@
             </objects>
             <point key="canvasLocation" x="1689.8550724637682" y="134.59821428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--Indicator Sample View Controller-->
         <scene sceneID="0Gf-Er-FIn">
             <objects>
-                <viewController id="bjX-kB-J9K" sceneMemberID="viewController">
+                <viewController id="bjX-kB-J9K" customClass="IndicatorSampleViewController" customModule="iOS_DefaultUISampler" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kk3-1Z-3rE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -280,15 +280,24 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="MJa-tu-Qp1">
                                 <rect key="frame" x="197" y="438" width="20" height="20"/>
                             </activityIndicatorView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XLq-h5-5I0">
+                                <rect key="frame" x="182.5" y="783" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="tLZ-4u-YwI" firstAttribute="bottom" secondItem="XLq-h5-5I0" secondAttribute="bottom" constant="48" id="Svk-Ml-YiK"/>
                             <constraint firstItem="MJa-tu-Qp1" firstAttribute="centerY" secondItem="Kk3-1Z-3rE" secondAttribute="centerY" id="UwH-Pp-utz"/>
+                            <constraint firstItem="XLq-h5-5I0" firstAttribute="centerX" secondItem="Kk3-1Z-3rE" secondAttribute="centerX" id="sbp-Nz-HZp"/>
                             <constraint firstItem="MJa-tu-Qp1" firstAttribute="centerX" secondItem="Kk3-1Z-3rE" secondAttribute="centerX" id="u8F-g3-ffV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tLZ-4u-YwI"/>
                     </view>
                     <navigationItem key="navigationItem" id="AI0-JH-MRf"/>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="MJa-tu-Qp1" id="xM1-A4-361"/>
+                        <outlet property="animationControlSwitch" destination="XLq-h5-5I0" id="I6z-s3-rAo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VRk-9x-XCq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
