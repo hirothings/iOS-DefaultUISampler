@@ -1,5 +1,12 @@
 # iOS-DefaultUISampler
 iOS標準UIワークショップ用のRepository
+iOSの標準UIをカタログにしたサンプルアプリです。
+
+勉強会のスライドも合わせてご参照ください。
+https://speakerdeck.com/hirothings/ios-default-ui-workshop
+
+![image](https://user-images.githubusercontent.com/5630896/67955149-76510c00-fc35-11e9-8ff9-3a2856f9fe06.png)
+
 
 ## How to Use
 1. 右上の"Clone or download"ボタンからこのリポジトリをローカルに落とします
